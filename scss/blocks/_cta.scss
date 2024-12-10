@@ -1,0 +1,33 @@
+
+
+.cta {
+    padding: 180px 0;
+
+    background: linear-gradient(
+        180deg, 
+        #242b33 10.42%, 
+        rgba(36, 43, 51, 0.9) 50.52%, 
+        #242b33 90.1%
+    ), url("./../img/cta/Rectangle.jpg");
+}
+
+.cta-title {
+    margin-bottom: 17px;
+}
+
+.cta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cta-text {
+    line-height: 1.5;
+
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+.cta-form {
+}
