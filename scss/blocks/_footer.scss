@@ -1,0 +1,32 @@
+
+
+.footer {
+    background-color: $footer-bg;
+    padding-top: 72px;
+    padding-bottom: 51px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-logo {
+    margin-top: -12px;
+}
+
+.footer-nav {
+}
+
+.footer-address {
+}
+
+
+
+
+
+
+
+
+

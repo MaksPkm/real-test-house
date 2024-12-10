@@ -322,4 +322,131 @@ a:hover {
 }
 .cta-text p + p {
   margin-top: 1em;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form-input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.form-input::-moz-placeholder {
+  color: #BEBEBE;
+}
+.form-input::placeholder {
+  color: #BEBEBE;
+}
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-privacy {
+  font-size: 13px;
+  color: #E7E7E7;
+  text-align: center;
+  line-height: 1.23;
+  align-self: center;
+}
+
+.form-btn {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #D4C17F;
+  transition: background-color 0.2s ease-in;
+}
+.form-btn:hover {
+  background-color: #e5ca6e;
+}
+
+.video {
+  text-align: center;
+}
+
+.video-link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.video-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video-link:hover::before {
+  background: rgba(36, 43, 51, 0.6);
+}
+
+.video-icon {
+  z-index: 9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+
+.video-link:hover .video-icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
+}
+
+.section-map {
+  padding: 180px 0;
+}
+
+.section-map-title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback-title {
+  margin-bottom: 38px;
+}
+
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer {
+  background-color: #2D343C;
+  padding-top: 72px;
+  padding-bottom: 51px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-logo {
+  margin-top: -12px;
 }/*# sourceMappingURL=main.css.map */
