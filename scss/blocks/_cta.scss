@@ -9,6 +9,10 @@
         rgba(36, 43, 51, 0.9) 50.52%, 
         #242b33 90.1%
     ), url("./../img/cta/Rectangle.jpg");
+
+    @include mediaTablet {
+        padding: 60px 0;
+    }
 }
 
 .cta-title {
@@ -19,6 +23,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta-text {
@@ -27,10 +35,18 @@
     p + p {
         margin-top: 1em;
     }
+
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }
 
 .cta-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }

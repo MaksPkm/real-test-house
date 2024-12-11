@@ -139,6 +139,11 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .link-bold {
   color: #D4C17F;
@@ -158,7 +163,7 @@ a:hover {
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -201,7 +206,7 @@ a:hover {
   right: 15px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header-nav {
     display: none;
   }
@@ -210,7 +215,7 @@ a:hover {
 .header-nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header-nav-btn {
     display: block;
   }
@@ -225,7 +230,7 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header-title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -244,7 +249,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header-footer {
     display: flex;
     flex-direction: column;
@@ -346,7 +351,7 @@ a:hover {
 .info-tel::before {
   background-image: url("./../img/header/phone-call.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -356,6 +361,7 @@ a:hover {
 }
 
 .benefits {
+  overflow: hidden;
   position: relative;
   padding: 120px 0;
 }
@@ -376,6 +382,13 @@ a:hover {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
+@media screen and (max-width: 959px) {
+  .benefits-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+}
 
 .benefits-item {
   text-align: center;
@@ -384,12 +397,24 @@ a:hover {
 .benefits-item-img {
   margin-bottom: 53px;
 }
+@media screen and (max-width: 959px) {
+  .benefits-item-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+}
 
 .benefits-item-text {
   font-size: 20px;
   line-height: 1.35;
   font-family: "Roboto", serif;
   font-weight: 300;
+}
+@media screen and (max-width: 959px) {
+  .benefits-item-text {
+    font-size: 16px;
+  }
 }
 
 .apartments {
@@ -410,11 +435,21 @@ a:hover {
 .apartments-title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .apartments-title {
+    margin-bottom: 44px;
+  }
+}
 
 .apartments-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .apartments-cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -471,10 +506,22 @@ a:hover {
   right: 20px;
   font-size: 24px;
 }
+@media screen and (max-width: 959px) {
+  .card-title {
+    font-size: 20px;
+    left: 30px;
+    bottom: 30px;
+  }
+}
 
 .cta {
   padding: 180px 0;
   background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0.9) 50.52%, #242b33 90.1%), url("./../img/cta/Rectangle.jpg");
+}
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
 }
 
 .cta-title {
@@ -486,6 +533,11 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta-text {
   line-height: 1.5;
@@ -493,11 +545,21 @@ a:hover {
 .cta-text p + p {
   margin-top: 1em;
 }
+@media screen and (max-width: 959px) {
+  .cta-text {
+    font-size: 14px;
+  }
+}
 
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form-input {
@@ -525,6 +587,11 @@ a:hover {
   text-align: center;
   line-height: 1.23;
   align-self: center;
+}
+@media screen and (max-width: 959px) {
+  .form-privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 
 .form-btn {
