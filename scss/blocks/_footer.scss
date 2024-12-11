@@ -4,6 +4,8 @@
     background-color: $footer-bg;
     padding-top: 72px;
     padding-bottom: 51px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 
 .footer-grid {
@@ -19,11 +21,21 @@
 .footer-nav {
 }
 
-.footer-address {
+.footer-nav-list {
+    display: grid;
+    gap: 15px;
 }
 
+.footer-address {
+    display: grid;
+    gap: 20px;
+}
 
-
+.footer-socials {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+}
 
 
 

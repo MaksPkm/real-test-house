@@ -1,5 +1,15 @@
 .benefits {
+    position: relative;
     padding: 120px 0;
+
+    &::after {
+        content: "II";
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+        line-height: 1.2;
+        @include decorNumber;
+    }
 }
 
 .benefits-row {
