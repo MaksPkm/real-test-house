@@ -12,6 +12,8 @@
         line-height: 1.2;
         @include decorNumber;
     }
+
+    overflow: hidden;
 }
 
 .video-link {
@@ -42,6 +44,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: all .2s ease-in;
+
+    @include mediaTablet {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .video-link:hover .video-icon {

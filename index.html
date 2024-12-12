@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REAL-TEST-HOUSE</title>
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 
 <body>
@@ -73,7 +74,7 @@
 
     <main>
 
-        <section class="benefits none">
+        <section class="benefits none1">
             <h2 class="visually-hidden">Benefits</h2>
             <div class="container container-small">
                 <div class="benefits-row">
@@ -126,7 +127,7 @@
             </div>
         </section>
 
-        <section class="apartments none">
+        <section class="apartments none1">
             <div class="container">
 
                 <div class="apartments-title">
@@ -186,7 +187,7 @@
             </div>
         </section>
 
-        <section class="cta none">
+        <section class="cta none1">
             <div class="container">
 
                 <div class="cta-title">
@@ -214,7 +215,7 @@
                             type="text" class="form-input" 
                             placeholder="Ваше имя" autocomplete="off"
                         >
-                        <input 
+                        <input data-tel-input
                             type="text" class="form-input" 
                             placeholder="Ваш телефон" autocomplete="off"
                         >
@@ -237,7 +238,7 @@
             <h2 class="visually-hidden">About apartments</h2>
             <div class="container">
                 
-                <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" class="video-link">
+                <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" class="video-link" data-youtubeLightbox>
                     <img src="./img/video/play.svg" alt="" class="video-icon">
                     <img src="./img/video/video-img.jpg" alt="" class="video-img">
                 </a>
@@ -245,7 +246,7 @@
 
         </section>
 
-        <section class="section-map none">
+        <section class="section-map none1">
             <div class="container">
 
                 <div class="section-map-title">
@@ -261,7 +262,7 @@
             </div>
         </section>
 
-        <section class="feedback none">
+        <section class="feedback none1">
             <div class="container">
 
                 <div class="feedback-title">
@@ -271,7 +272,7 @@
                 </div>
 
                 <form class="feedback-form form">
-                    <p class="form-privacy">
+                    <p class="form-privacy form-privacy--bottom">
                         *Мы никому не передаем ваши данные. <br>
                         И не сохраняем ваш номер в базу.
                     </p>
@@ -279,7 +280,7 @@
                         type="text" class="form-input" 
                         placeholder="Ваше имя" autocomplete="off"
                     >
-                    <input 
+                    <input data-tel-input
                         type="text" class="form-input" 
                         placeholder="Ваш телефон" autocomplete="off"
                     >
@@ -293,7 +294,7 @@
 
     </main>
 
-    <footer class="footer none">
+    <footer class="footer none1">
         <div class="container">
 
             <div class="footer-grid">
@@ -372,7 +373,21 @@
         </div>
     </footer>
 
-    <script src="./js/main.js" defer></script>
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+    <script src="./js/main.js"></script>
 
 </body>
 </html>      

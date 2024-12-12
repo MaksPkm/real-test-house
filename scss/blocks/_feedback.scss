@@ -2,14 +2,26 @@
 
 .feedback {
     padding-bottom: 180px;
+
+    @include mediaTablet {
+        padding-bottom: 90px;
+    }
 }
 
 .feedback-title {
     margin-bottom: 38px;
+
+    @include mediaTablet {
+        margin-bottom: 19px;
+    }
 }
 
 .feedback-form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }

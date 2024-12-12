@@ -611,6 +611,7 @@ a:hover {
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .video::after {
   content: "IV";
@@ -651,6 +652,12 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 959px) {
+  .video-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .video-link:hover .video-icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -673,9 +680,19 @@ a:hover {
   font-family: "Playfair Display", serif;
   opacity: 0.02;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 
 .section-map-title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map-title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
@@ -686,15 +703,30 @@ a:hover {
 .feedback {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
+}
 
 .feedback-title {
   margin-bottom: 38px;
+}
+@media screen and (max-width: 959px) {
+  .feedback-title {
+    margin-bottom: 19px;
+  }
 }
 
 .feedback-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .feedback-form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -704,11 +736,23 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+  }
 }
 
 .footer-logo {
